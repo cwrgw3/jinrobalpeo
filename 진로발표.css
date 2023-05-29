@@ -26,7 +26,8 @@ header {
   width: 100%;
   }
 
-li { list-style:none;}
+li { list-style:none;
+  scroll-behavior: smooth;}
 
 nemo {
   width: 100%;
@@ -38,7 +39,8 @@ nemo {
 }
 
 a { text-decoration:none;
-    font-size:20px;}
+  font-size:20px;
+  scroll-behavior:smooth;}
 
 .menu {width: 60%;
   font-family:"Jua";
@@ -81,11 +83,32 @@ a:link {
 }
 
 a:hover {
-  color : rgb(219, 185, 74);
+  color : rgb(231, 183, 23);
 }
 
 .fadeinleft {
   opacity:0;
   margin-left:-300px;    
   max-width:100%;
+}
+
+html, body {padding:0; margin:0; width: 100%; height:100%;}
+.backg {
+  width: 70%;
+  height: 70%;
+  background: url(library.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 50px auto;
+  display: table;
+}
+
+
+#pdf-container {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top:200px;
+  z-index: 4;
+  text-align: center;
 }
