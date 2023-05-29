@@ -47,11 +47,12 @@ a { text-decoration:none;
   overflow: hidden;
   margin: 10px auto;
   position: absolute;
-  left:30%;
+  left:20%;
+  right: 20%;
   z-index: 1;}
   
   .menu > li {
-    width: 15%; /*20*5=100%*/
+    width: 50%; /*20*5=100%*/
     float: left;
     text-align: center;
     line-height: 40px;
@@ -93,6 +94,7 @@ a:hover {
 }
 
 html, body {padding:0; margin:0; width: 100%; height:100%;}
+
 .backg {
   width: 70%;
   height: 70%;
@@ -111,4 +113,21 @@ html, body {padding:0; margin:0; width: 100%; height:100%;}
   top:200px;
   z-index: 4;
   text-align: center;
+}
+
+.banselect{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* 인터넷익스플로러 */
+  user-select: none;
+}
+
+.ul-sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.ul-sticky__list {
+  position: sticky;
+  top: 0px;
 }
